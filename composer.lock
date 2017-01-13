@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "66f060b5c24513190add996ef442289a",
+    "content-hash": "cba40e0e75bfca21581a00d25fdf25e2",
     "packages": [],
     "packages-dev": [
         {
@@ -1380,7 +1380,7 @@
                 "source": "https://github.com/ulabox/ulabox-coding-standard",
                 "issues": "https://github.com/ulabox/ulabox-coding-standard/issues"
             },
-            "time": "2016-10-18T10:20:04+00:00"
+            "time": "2016-10-18 10:20:04"
         },
         {
             "name": "webmozart/assert",

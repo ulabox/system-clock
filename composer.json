@@ -1,6 +1,6 @@
 {
-  "name": "ulabox/netsuite-api-adapter",
-  "description": "Ulabox Netsuite API Adapter",
+  "name": "ulabox/system-clock",
+  "description": "Ulabox System Clock",
   "type": "library",
   "license": "proprietary",
   "authors": [
