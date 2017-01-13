@@ -1,0 +1,38 @@
+{
+  "name": "ulabox/netsuite-api-adapter",
+  "description": "Ulabox Netsuite API Adapter",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ulabox Tech",
+      "email": "tech@ulabox.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:ulabox/ulabox-coding-standard.git"
+    }
+  ],
+  "require": {
+    "php": "~7.0"
+  },
+  "require-dev": {
+    "ulabox/ulabox-coding-standard": "dev-master",
+    "phpunit/phpunit": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ulabox\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ulabox\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
