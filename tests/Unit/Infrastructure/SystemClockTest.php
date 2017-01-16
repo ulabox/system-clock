@@ -1,11 +1,11 @@
 <?php
 
-namespace Ulabox\Tests\Unit;
+namespace Ulabox\Tests\SystemClock\Infrastructure;
 
-use Ulabox\SystemClock;
-use Ulabox\Clock;
+use Ulabox\SystemClock\Infrastructure\SystemClock;
+use Ulabox\SystemClock\SystemClock as SystemClockInterface;
 
-class ClockTest extends \PHPUnit_Framework_TestCase
+class SystemClockTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var SystemClock
@@ -14,12 +14,12 @@ class ClockTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->sut = new Clock();
+        $this->sut = new SystemClock();
     }
 
     public function testImplementsSystemClockInterface()
     {
-        $this->assertInstanceOf(SystemClock::class, $this->sut);
+        $this->assertInstanceOf(SystemClockInterface::class, $this->sut);
     }
 
     public function testReturnsDateTimeImmutables()
