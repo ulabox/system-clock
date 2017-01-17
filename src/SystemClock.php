@@ -1,6 +1,6 @@
 <?php
 
-namespace Ulabox;
+namespace Ulabox\SystemClock;
 
 interface SystemClock
 {

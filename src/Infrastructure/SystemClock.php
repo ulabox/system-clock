@@ -1,8 +1,10 @@
 <?php
 
-namespace Ulabox;
+namespace Ulabox\SystemClock\Infrastructure;
 
-class Clock implements SystemClock
+use Ulabox\SystemClock\SystemClock as SystemClockInterface;
+
+class SystemClock implements SystemClockInterface
 {
     /**
      * @return \DateTimeImmutable

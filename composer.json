@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Ulabox\\": "src/"
+      "Ulabox\\SystemClock\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Ulabox\\Tests\\": "tests/"
+      "Ulabox\\Tests\\SystemClock\\": "tests/"
     }
   },
   "config": {
