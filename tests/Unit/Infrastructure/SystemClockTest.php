@@ -2,10 +2,11 @@
 
 namespace Ulabox\Tests\SystemClock\Infrastructure;
 
+use PHPUnit\Framework\TestCase;
 use Ulabox\SystemClock\Infrastructure\SystemClock;
 use Ulabox\SystemClock\SystemClock as SystemClockInterface;
 
-class SystemClockTest extends \PHPUnit_Framework_TestCase
+class SystemClockTest extends TestCase
 {
     /**
      * @var SystemClock
@@ -32,5 +33,10 @@ class SystemClockTest extends \PHPUnit_Framework_TestCase
         $then = $this->sut->now();
         sleep(1);
         $this->assertNotEquals($then, $this->sut->now());
+    }
+
+    public function testShouldReturnMicrotime()
+    {
+        $this->assertInternalType('float', $this->sut->microtime());
     }
 }
