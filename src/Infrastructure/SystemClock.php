@@ -13,4 +13,12 @@ class SystemClock implements SystemClockInterface
     {
         return new \DateTimeImmutable();
     }
+
+    /**
+     * @return float
+     */
+    public function microtime(): float
+    {
+        return microtime(true);
+    }
 }
